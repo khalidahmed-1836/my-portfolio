@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Khalid Ahmed | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #ffffff;
+  color: #333;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+  background: white;
+}
+
+.mainh4{
+  color: #2f80ed;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  font-weight: bold;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 60px;
+}
+
+.hero-img img {
+  width: 100%;
+  border-radius: 50%;
+  max-width: 200px;
+  object-fit: cover;
+  margin-right: 100px;
+}
+
+.buttons {
+  margin: 20px 0;
+}
+
+.social-icon img{
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  
+
+}
+
+.social-icon img:hover{
+  transform: scale(1.15);
+}
+
+.btn {
+  background: #2f80ed;
+  color: white;
+  padding: 10px 18px;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.btn-outline {
+  margin-left: 10px;
+  border: 2px solid #2f80ed;
+  padding: 8px 16px;
+  color: #2f80ed;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+/* EDUCATION */
+.education {
+  padding: 60px;
+  background: #2f80ed;
+  color: white;
+  text-align: center;
+}
+
+.education {
+  position: relative;
+  background: #2f80ed;
+  color: white;
+  padding: 120px 0;
+  overflow: hidden;
+}
+
+/* ===== TIMELINE ===== */
+.timeline {
+  position: relative;
+  width: 80%;
+  margin: 60px auto;
+  height: 600px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  width: 4px;
+  background: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  width: 50%;
+  padding: 20px;
+  position: relative;
+}
+
+.timeline-item.left {
+  left: 0;
+  text-align: right;
+}
+
+.timeline-item.right {
+  left: 50%;
+}
+
+.timeline-item .content {
+  background: white;
+  color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+/* CENTER DOT */
+.timeline-item::after {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background: #2f80ed;
+  border: 4px solid white;
+  border-radius: 50%;
+  top: 30px;
+  right: -7px;
+}
+
+.timeline-item.right::after {
+  left: -7px;
+}
+
+/* SKILLS */
+.skills {
+  padding: 60px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  cursor: pointer;
+  margin-top: 40px;
+
+}
+
+.skill {
+  background: #ffffff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  color: rgb(68, 0, 255);
+}
+
+/* CONTACT */
+.contact {
+  padding: 50px;
+  background-color: white;
+}
+
+.contact-box {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.contact img {
+  width: 250px;
+  
+}
+.contact h2{
+  padding: 50px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, textarea {
+  padding: 10px;
+  width: 280px;
+}
+
+button {
+  background: #2f80ed;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+  background: #2f80ed;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+
+</style>
+
+<body>
+
+<!-- NAVBAR -->
+<header>
+  <nav class="navbar">
+    <h2>My Portfolio</h2>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- HERO SECTION -->
+<section id="about" class="hero">
+  <div class="hero-text">
+    <h4 class="mainh4">Hello! I’m</h4>
+    <h1>Khalid Ahmed</h1>
+    <p>
+      I’m a Web Developer, Designer & Content Creator.
+      Passionate about web development, <br> graphic design,
+      stenography, voice artistry and video editing.
+    </p>
+
+    <div class="buttons">
+      <a href="tel:+923108282961" class="btn">Call Me</a>
+      <a href="mailto:khalid.ahmed143@yahoo.com" class="btn-outline">Email</a>
+    </div>
+
+    <div class="socials">
+      <a href="https://www.facebook.com/khalidahmed82800" target="_blank" class="social-icon" > <img src="blackfacebook.png" alt="facebook"></a>
+      <a href="https://www.instagram.com/its__khalid2.0" target="_blank" class="social-icon" > <img src="blackinsta.png" alt="instagram"></a>
+      <a href="https://wa.me/923108282961"target="_blank" class="social-icon" > <img src="blackwhatsapp.png" alt="whatsapp"></a>
+    </div>
+  </div>
+
+  <div class="hero-img">
+    <!-- BOY IMAGE PLACEHOLDER -->
+    <img src="crop.profile.png" alt="profile">
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="education">
+  
+  <section id="education" class="education">
+
+
+  <h2>Education</h2>
+
+  <div class="timeline">
+
+    <div class="timeline-item left">
+      <div class="content">
+        <h3>Matriculation</h3>
+        <p>Government Boys High School, Khambra</p>
+        <span>2021</span>
+      </div>
+    </div>
+
+    <div class="timeline-item right">
+      <div class="content">
+        <h3>Intermediate</h3>
+        <p>JMHD Government Degree College, Ubauro</p>
+        <span>2023</span>
+      </div>
+    </div>
+
+    <div class="timeline-item left">
+      <div class="content">
+        <h3>Shorthand</h3>
+        <p>Government Technical College, Ghotki</p>
+        <span>2024</span>
+      </div>
+    </div>
+
+    <div class="timeline-item right">
+      <div class="content">
+        <h3>DIT</h3>
+        <p>Islamia Institute of IT, Ghotki</p>
+        <span>2025</span>
+      </div>
+    </div>
+  </section>
+
+<!-- SKILLS -->
+<section id="skills" class="skills">
+  <h2>Skills</h2>
+
+  <div class="skills-grid">
+    <div class="skill">Web Development</div>
+    <div class="skill">Graphic Designing</div>
+    <div class="skill">Stenography</div>
+    <div class="skill">Voice Artist</div>
+    <div class="skill">Content Creator</div>
+    <div class="skill">Video Editing</div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <h2>Get in Touch</h2>
+
+  <div class="contact-box">
+    <!-- BOY VECTOR PLACEHOLDER -->
+    <img src="laptopboy.png" alt="Boy with laptop">
+
+    <form>
+      <input type="text" placeholder="Full Name">
+      <input type="email" placeholder="Email">
+      <textarea placeholder="Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>Follow My Social Media</p>
+  <p>© Khalid Ahmed, 2026. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
